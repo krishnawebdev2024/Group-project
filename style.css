@@ -1,5 +1,41 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 1440px;
+  margin: 0 auto;
+}
+#Navbar {
+  height: 142px;
+  background-color: #8f8f8f;
+}
+#Home {
+  height: 582px;
+  background-color: #c4c4c4;
+}
+#Companies {
+  height: 296px;
+  background-color: #ededed;
+}
+#Video {
+  height: 563px;
+  background-color: #ababab;
+}
+#Features {
+  height: 601px;
+  background-color: #c4c4c4;
+}
+#USP {
+  height: 808px;
+  background-color: #ededed;
+}
+#Prices {
+  height: 734px;
+  background-color: #c4c4c4;
+}
+#Footer {
+  height: 580px;
+  background-color: #ededed;
 }
