@@ -10,7 +10,81 @@ body {
 #Navbar {
   height: 142px;
   background-color: #8f8f8f;
+  top: 0px;
+  position: sticky;
+  z-index: 40;
 }
+
+.logo {
+padding: 55px 20px;
+}
+
+.logo a {
+    text-transform: capitalize;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.main-menu {
+    margin: -100px 0px;
+    display: flex;
+    justify-content:flex-end
+}
+
+.main-menu ul.nav {
+    float: left;
+    margin-right: 20px;
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    padding-top:10px;
+}
+
+.nav li {
+    margin-left: 0px;
+}
+
+.main-menu ul {  
+    display: inline-block; 
+}
+
+.main-menu ul li {
+    position: relative;
+    display: inline-block;
+    margin: 12px 20px;
+}
+
+.main-menu ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #f8f8f8;
+    display: block;
+   text-decoration:none;
+}
+
+.main-menu ul.button {   
+ padding-left:0px;
+}
+
+.main-menu ul.button li a {
+    width: 150px;
+    height: 45px;
+    border-radius: 0%;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.main-menu ul.button li.active a {
+    background-color: #ffffff;
+    color: #000000;
+}
+
 #Home {
   height: 582px;
   background-color: #c4c4c4;
@@ -19,6 +93,37 @@ body {
   height: 296px;
   background-color: #ededed;
 }
+
+.com-container p {
+padding-top: 40px;
+padding-bottom: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+font-weight: 500;
+}
+
+.com-container p {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+.logos-flex-container {
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .logos-flex-item {
+    width: 260px;
+    height: 80px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
 #Video {
   height: 563px;
   background-color: #ababab;
@@ -27,6 +132,64 @@ body {
   height: 601px;
   background-color: #c4c4c4;
 }
+
+.service {
+    width: 100%;
+    height: 100vh;
+}
+
+.features-heading {
+    text-align: center;
+}
+
+.features-heading h1 {
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    position: relative;
+}
+
+.features-heading p {
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.features-heading  {
+    border-bottom: 3px;
+    padding-top: 90px;
+}
+
+.feature-content {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin: 80px;
+}
+
+.feature-content .card {
+    text-align: center;
+    padding: 25px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+
+}
+
+.feature-content .card .bx {
+    padding: 10px;
+    font-size: 40px;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.feature-content .card p {
+    margin-top: 4px;
+    font-weight: bolder;
+    margin-left: 30px;
+    
+}
+
 #USP {
   height: 808px;
   background-color: #ededed;
@@ -39,3 +202,85 @@ body {
   height: 580px;
   background-color: #ededed;
 }
+
+.footer-content p {
+    padding-top: 150px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    }
+    
+    .footer-content p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    }
+
+    .nav-footer a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+      }
+       
+      .nav-footer {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 20px; 
+        gap: 1rem;         
+      }
+    
+    .svg-inline--fa {
+      vertical-align: -14px;
+    }
+    
+    .rounded-social-buttons {
+      text-align: center;
+    }
+    
+    .rounded-social-buttons .social-button {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      width: 70px;
+      height: 70px;
+      border: 1px solid transparent;
+      padding: 0;
+      text-decoration: none;
+      text-align: center;
+      color: #fefefe;
+      font-weight: normal;
+      line-height: 50px;
+      border-radius: 50px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .rounded-social-buttons  {
+      font-size: 30px;
+      margin-top: 40px;
+    }
+    
+    .rounded-social-buttons .social-button.facebook {
+      background: #383939;
+    }
+    
+    .rounded-social-buttons .social-button.linkedin {
+      background: #383939;
+    }
+    
+    .rounded-social-buttons .social-button.youtube {
+      background: #383939;
+    }
+    
+    .rounded-social-buttons .social-button.instagram {
+      background: #383939;
+    }
+  
