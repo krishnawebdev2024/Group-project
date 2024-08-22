@@ -289,6 +289,10 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
+  background-image: url("images/Hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .firstbox {
   width: 513px;
@@ -300,6 +304,11 @@ body {
   padding: 40px;
   background-color: #ededed;
   margin-right: 123px;
+
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
 }
 span {
   font-size: 48px;
@@ -309,113 +318,336 @@ p {
   font-size: 18px;
 }
 .firstboxtitle {
-  background-color: #ffffff;
-  padding: 12px;
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
 }
 button {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  background-color: #c41230;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 24px;
-  margin-top: 24px;
-  width: 195px;
-  height: 51px;
-  align-items: center;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #c41230;
+  transform: translateY(-2px);
+  box-shadow: 0px 0px 0px rgba(255, 0, 43, 1);
 }
 /* ------------------SECONDBOX---------------- */
 .secondbox {
-  width: 286px;
-  height: 458px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 40px;
-  background-color: #ededed;
+
   border-radius: 47px;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  background-color: #ededed;
+  margin-right: 123px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
 }
 
 /* ------------------VIDEO-SECTION-STYLES---------------- */
 
 .video-container {
   display: flex;
-  flex-direction: column;
+
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("images/video\ background.jpg");
 }
+
 .videotitle {
   font-size: 48px;
-  margin-top: 54px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background-color: #333;
+  padding: 15px 15px;
+  border-radius: 8px;
+  transform: rotate(-45deg);
+  transform-origin: center;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
 }
+
 video {
   width: 717px;
-  margin-bottom: 67px;
   margin-top: 50px;
+  margin-bottom: 67px;
+  margin-right: 50px;
+  border-radius: 10px; /* Add rounded corners to the video */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add a soft shadow for depth */
+  transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+video:hover {
+  transform: scale(1.02); /* Slight zoom on hover for interactivity */
 }
 
 /* ------------------PRICES-SECTION-STYLES---------------- */
-.price-box {
-  height: 396px;
-  width: 291px;
-  background-color: #ffffff;
+
+/* Overall section styling */
+#Prices {
+  background-color: #f9f9f9; 
+}
+
+/* Container holding the price cards */
+.price-container {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(images/pricecards-background.jpg);
 }
-.pricebutton {
-  background-color: #ebebeb;
-  width: 238px;
-  height: 59px;
-}
-.pricelabel {
-  font-size: 48px;
-}
+
+/* Container for the price boxes */
 .priceboxcontainer {
   display: flex;
   column-gap: 35px;
   margin-top: 50px;
   margin-bottom: 104px;
 }
-.price-container {
+.card-text {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+.pricebox-title {
+  font-size: 48px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background-color: #333;
+  padding: 15px 15px;
+  border-radius: 8px;
+  
+  transform-origin: center;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+/* Individual price box styling */
+.price-box {
+  height: 396px;
+  width: 291px;
+  background-color: #ffffff;
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
+  justify-content: space-around;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 8px solid #c41230;
+
+  background:
+        /* Base gradient for the texture */ linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1) 25%,
+        transparent 25%
+      )
+      0 0,
+    linear-gradient(225deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%) 0 0,
+    /* Adds the pattern for the texture */
+      linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%) 0 0,
+    linear-gradient(315deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%) 0 0;
+  background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+  background-blend-mode: multiply;
 }
+
+/* Price label styling */
+.pricelabel {
+  font-size: 48px; 
+  font-weight: bold; 
+  color: #fff; 
+  background: linear-gradient(
+    135deg,
+    #ff6f61,
+    #ffcc70
+  ); 
+  padding: 15px 25px; 
+  border-radius: 8px; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  display: inline-block; 
+  margin: 0; 
+}
+
+/* Button styling */
+.price-box button {
+  padding: 12px 24px;
+  background-color: #c41230;
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.price-box button:hover {
+  background-color: #c41230;
+}
+
+.price-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 /* ------------------USP-SECTION-STYLES---------------- */
+
+/* Section Styling */
+#USP {
+  background-color: #f0f4f8; 
+  
+}
+
+/* Container Styling */
 .usp-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  height: 100%;
+  text-align: center; 
+  background-image: url(images/usp\ background.jpg);
   width: 100%;
-  padding: 40px;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+/* Title Styling */
+.usp-container > span {
+  font-size: 32px; 
+  color: #333; 
+  margin-bottom: 40px; 
+  letter-spacing: 1px; 
 }
+
+/* Card Container Styling */
+.usp-card-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 30px;
+  justify-content: center; 
+  margin-bottom: 40px; 
+}
+
+/* Card Styling */
 .usp-card {
-  width: 192px;
-  height: 238px;
+  width: 300px; 
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  background: #fff; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  padding: 20px; 
   text-align: center;
+  overflow: hidden; 
+
+  
 }
+
+/* Card Hover Effect */
+.usp-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+}
+
+/* Card Picture Styling */
 .usp-card-picture {
-  height: 110px;
-  width: 110px;
-  border-radius: 50%;
-  background-color: #c4c4c4;
-  margin-bottom: 16px;
-}
-.usp-card-container {
+  height: 80px; 
+  width: 80px; 
+  border-radius: 50%; /* Circular shape */
+  background: linear-gradient(
+    135deg,
+    #ff7e5f,
+    #feb47b
+  ); 
+  margin-bottom: 16px; 
   display: flex;
-  gap: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card Picture Icon */
+.usp-card-picture::before {
+  content: "✓"; 
+  font-size: 36px; 
+  color: #fff; 
+}
+
+/* Card Text Styling */
+.usp-card p {
+  font-size: 16px; 
+  color: #666; 
+  line-height: 1.4; 
+  margin: 0; 
+}
+.usp-box-title{
+  font-size: 48px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background-color: #333;
+  padding: 15px 15px;
+  border-radius: 8px;
+  
+  transform-origin: center;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
 }
